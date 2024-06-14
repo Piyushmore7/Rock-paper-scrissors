@@ -1,0 +1,13 @@
+import pandas as pd
+from sklearn.neighbors import NearestNeighbors
+import numpy as np
+
+# Load dataset
+books = pd.read_csv('BX-Books.csv', sep=';', error_bad_lines=False, encoding="latin-1")
+ratings = pd.read_csv('BX-Book-Ratings.csv', sep=';', error_bad_lines=False, encoding="latin-1")
+users = pd.read_csv('BX-Users.csv', sep=';', error_bad_lines=False, encoding="latin-1")
+
+# Preview data
+books.head()
+ratings.head()
+users.head()
